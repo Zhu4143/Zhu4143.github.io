@@ -1,0 +1,1 @@
+import{Q as r}from"./three.module-DPgZ_WTG.js";import{R as t}from"./RoomEnvironment-Cb6mkrGG.js";function s(e){const o=new r(e),n=new t;try{return o.fromScene(n,.04)}finally{n.dispose(),o.dispose()}}export{s as createInspectionEnvironment};
