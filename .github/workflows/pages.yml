@@ -1,5 +1,5 @@
-# Publish the pre-built site as-is. The default Pages deploy times out at 10 minutes on a site this
-# large (about 260 MB of models, video and gesture assets), so this one allows 30.
+# Publish the pre-built site as-is (about 260 MB of models, video and gesture assets). The first
+# deploy took about 8 minutes; 600000 ms is the longest timeout deploy-pages allows.
 name: Deploy to GitHub Pages
 on:
   push:
@@ -27,4 +27,4 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
         with:
-          timeout: 1800000
+          timeout: 600000
